@@ -1,0 +1,262 @@
+body{
+    font-family: 'Forum', cursive;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f1f3f9;
+}
+/* main styles */
+.main{
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center; 
+}
+
+
+/* main content */
+.main-content{
+    background-color: #FFFFFF;
+    padding: 70px; 
+
+}
+/* about styles */
+.about{
+    margin-bottom: 50px;
+}
+
+.position-name{
+    margin-bottom: 50px;   
+}
+
+.general{
+    margin-bottom: 50px;
+}
+
+.about-position{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 17px;
+    color: #0a0a0a;
+}
+
+.about-name{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 55px;    
+    color: #0e4c6d;
+    padding-bottom: 0px; 
+}
+
+
+.about-destription{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+    width: 680px;
+}
+.subtitle{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #463b3b;
+    margin: 0;
+}
+
+/* project styles */
+.projects{
+    margin-bottom: 50px;
+}
+.projects-item{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #0a0a0a;
+}
+.project,
+.project-link{
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+color: #595959;
+}
+.project-link:hover{
+    color: #3c8fbb;
+}
+.project-bracet{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #0a0a0a;
+}
+.title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #01263d;
+    margin-bottom: 10px;
+
+}
+.projects-list{
+    padding: 0;
+    margin-left: 15px;
+}
+.project-link{
+    margin-left: 10px;
+}
+/* work styles */
+.work{
+    margin-bottom: 50px;
+}
+.work-position{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #0a0a0a;
+    margin-bottom: 10px;    
+}
+.oranization{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ef4043;
+}
+.period{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #A8A8A8;
+    margin-bottom: 10px;
+}
+.line{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #0a0a0a;
+}
+.work-list{
+    padding: 0;
+    margin-left: 15px;
+}
+.work-list-item{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+    width: 710px;
+}
+.work-list-item::marker{
+    color: #ef4043;
+
+}
+.education{
+   
+}
+.management{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #0a0a0a;
+    margin-bottom: 10px;
+}
+
+
+/* sidebar  */
+.sidebar{
+ 
+    background-color: #01263d;
+padding: 50px;
+
+   
+   
+}  
+.photo{
+    width: 200px;
+    
+ 
+  
+
+}
+.sidebar-title{
+    color:#FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 20px;
+   
+}
+
+
+ .contact-type{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;   
+    color: #FFFFFF;
+    margin-right: 10px;    
+ }
+ .contact-link{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;        
+    color: #7b8286;   
+ }
+ .contact-link:hover{
+color: #3c8fbb;
+ }
+
+ .tech-skills{  
+    margin-bottom: 40px;
+ }
+ .tech-skills-list{
+    color: #FFFFFF;
+    padding: 0;
+    margin-left: 17px;
+    margin-top: 0;
+ }
+.tech-skills-item{
+    color: #c43240;
+}
+.tech-skills-text{
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+.soft-skills{
+    margin-bottom: 366px;
+}
+.soft-skills-list{
+    color: #FFFFFF;
+    padding: 0;
+    margin-left: 17px;
+    margin-top: 0;
+}
+.soft-skills-item {
+    color: #c43240;
+}
+.soft-skills-text {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
