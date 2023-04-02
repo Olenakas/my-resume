@@ -1,51 +1,107 @@
-body{
-    font-family: 'Forum', cursive;
+h1,
+h2,
+h3,
+h4,
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ol,
+ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+img{
+    display: block;
+}
+button{
+    cursor: pointer;
+}
+
+.list {
+    list-style: none;
+}
+
+.link{
+    text-decoration: none;
+    color: none;
+}
+
+
+.main-content{      
+    margin: 0 auto; 
+    background-color: #FFFFFF; 
+
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width: 375px) {  
+    .main-content{      
+       }
+}  
+
+@media screen and (min-width: 768px) {  
+    .main-content{      
+
+        flex-direction: row;
+    }
+  }
+  @media screen and (min-width: 1284px) {
+    .main-content{      
+ 
+   
+        box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);  
+
+    }
+}
+
+body{ 
     font-family: 'Montserrat', sans-serif;
     background-color: #f1f3f9;
+    margin: 15px;
+    white-space: wrap;
 }
 /* main styles */
-.main{
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+
+
+
+
+
+/* resume content */
+.resume-content{
+    padding: 100px 90px;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: center; 
-}
-
-
-/* main content */
-.main-content{
-    background-color: #FFFFFF;
-    padding: 70px; 
-
+    flex-direction: column;
+    gap: 50px;  
+    
 }
 /* about styles */
-.about{
-    margin-bottom: 50px;
-}
 
-.position-name{
-    margin-bottom: 50px;   
-}
-
-.general{
-    margin-bottom: 50px;
+.content{
+   
+    
 }
 
 .about-position{
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
-    line-height: 17px;
+    font-size: 18px;
+    line-height: calc(17/25);
     color: #0a0a0a;
 }
 
+.about{
+    width: 400px;
+}
 .about-name{
     font-style: normal;
     font-weight: 700;
     font-size: 45px;
-    line-height: 55px;    
+    line-height: calc(55/45);       
     color: #0e4c6d;
-    padding-bottom: 0px; 
+    margin-top: 13px;
+    margin-bottom: 24px; 
 }
 
 
@@ -53,37 +109,65 @@ body{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: calc(17/14);   
     color: #595959;
-    width: 680px;
+   
 }
 .subtitle{
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 17px;
+    line-height: calc(17/14);   
     color: #463b3b;
     margin: 0;
 }
 
+.subtitle-general:not(:last-child){
+    margin-bottom: 5px;
+}
+
+.summary{
+    width: 400px;
+}
+
+
 /* project styles */
 .projects{
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 .projects-item{
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 24px;
+    line-height: calc(24/14);
     color: #0a0a0a;
 }
-.project,
+.projects-item:not(:last-child){
+    margin-bottom: 20px;
+}
+.projects-item-content{
+    display: flex;   
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+
+.projects-list{
+    margin-left: 18px;
+    
+}
 .project-link{
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-color: #595959;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    color: #595959;
+    max-width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
 }
 .project-link:hover{
     color: #3c8fbb;
@@ -92,136 +176,214 @@ color: #595959;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 24px;
+    line-height: calc(24/14);
     color: #0a0a0a;
 }
 .title{
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
-    line-height: 27px;
+    line-height: calc(27/22);
     color: #01263d;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
 
 }
-.projects-list{
-    padding: 0;
-    margin-left: 15px;
-}
+
 .project-link{
     margin-left: 10px;
 }
 /* work styles */
 .work{
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 .work-position{
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 20px;
+    line-height: calc(20/16);
     color: #0a0a0a;
-    margin-bottom: 10px;    
+    margin-bottom: 8px;    
 }
 .oranization{
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 20px;
+    line-height: calc(20/16);
     color: #ef4043;
 }
 .period{
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 15px;
+    line-height: calc(15/12);
     color: #A8A8A8;
-    margin-bottom: 10px;
+   
+}
+.period:not(:last-child){
+    margin-bottom: 7px;
 }
 .line{
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 15px;
+    line-height: calc(15/12);
     color: #0a0a0a;
 }
 .work-list{
-    padding: 0;
+    margin-top: 12px;
     margin-left: 15px;
 }
 .work-list-item{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
-    color: #595959;
-    width: 710px;
+    line-height: calc(24/14);
+    color: #595959;    
 }
 .work-list-item::marker{
     color: #ef4043;
 
 }
-.education{
+.education-list:not(:last-child){
+    margin-bottom: 11px;
+
    
 }
 .management{
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 17px;
+    line-height: calc(17/14);
     color: #0a0a0a;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 
 /* sidebar  */
 .sidebar{
- 
+    width: 100%;
     background-color: #01263d;
-padding: 50px;
-
-   
-   
-}  
-.photo{
-    width: 200px;
-    
- 
+    padding: 50px;
+    display: flex;
+    flex-direction: row-reverse; 
   
+   align-items: stretch;
+    gap: 20px;
+    flex-grow: 1;
 
+}  
+@media screen and (min-width: 375px) {  
+    .sidebar{
+        width: 100%;
+        background-color: #01263d;
+        padding: 50px;
+        display: flex;
+        flex-direction: row;  
+        gap: 20px;
+        flex-grow: 1
+    } 
+}  
+
+@media screen and (min-width: 768px) {  
+    .sidebar{
+        width: 370px;
+        background-color: #01263d;
+        padding: 50px;
+        display: flex;    
+        flex-direction: column;
+        
+        gap: 30px;
+        flex-grow: 1
+    } 
+  }
+  @media screen and (min-width: 1284px) {
+    .sidebar{
+        width: 370px;
+        background-color: #01263d;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;  
+        gap: 45px;
+        flex-grow: 1
+    } 
 }
+.photo{
+    width: 200px;  
+}
+
+
 .sidebar-title{
     color:#FFFFFF;
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
-    line-height: 27px;
+    line-height: calc(27/22);
     margin-bottom: 20px;
    
 }
 
 
- .contact-type{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;   
-    color: #FFFFFF;
-    margin-right: 10px;    
- }
+.contacts-content-wrap{
+   display: flex;
+   flex-direction: column;
+    gap: 40px;
+ 
+    overflow: auto;
+   
+}
+
+@media screen and (min-width: 768px) {  
+    .contacts-content-wrap{
+       
+        flex-direction: column;
+        
+     }
+  }
+  @media screen and (min-width: 1284px) {
+    .contacts-content-wrap{
+       
+        flex-direction: column;
+        
+     }
+}
+
+
+.contacts{
+    width: 200px;
+}
+.contact-item{
+    display: flex;
+    align-items: center;  
+    gap: 10px;
+}
+.contact-icon{
+    fill: #7b8286;
+}
+.contact-icon:hover,
+.contact-icon:focus{
+    fill: #3c8fbb;
+
+}
+
+
+
  .contact-link{
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;        
+    font-size: 11px;
+    line-height: calc(24/14);        
     color: #7b8286;   
  }
- .contact-link:hover{
-color: #3c8fbb;
+ .contact-link:hover,
+ .contact-link:focus{
+    color: #3c8fbb;
  }
 
+
+
+
  .tech-skills{  
-    margin-bottom: 40px;
+    width: 200px;
  }
  .tech-skills-list{
     color: #FFFFFF;
@@ -237,10 +399,10 @@ color: #3c8fbb;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: calc(24/14);
 }
 .soft-skills{
-    margin-bottom: 366px;
+   width: 200px;
 }
 .soft-skills-list{
     color: #FFFFFF;
@@ -256,7 +418,7 @@ color: #3c8fbb;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: calc(24/14);
 }
 
 
