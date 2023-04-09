@@ -93,7 +93,7 @@ body{
     font-weight: 700;
     font-size: 18px;
     line-height: calc(17/25);
-    color: #0a0a0a;
+    color: #ef4043;
 }
 .about-name{
     font-style: normal;
@@ -180,24 +180,21 @@ body{
     color: #01263d;
     margin-bottom: 14px;
 }
-.project-link{
-    margin-left: 10px;
-}
 .work-position{
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: calc(20/16);
-    color: #0a0a0a;
+    line-height: calc(20/16);    
     margin-bottom: 8px;    
 }
 .oranization{
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: calc(20/16);
-    color: #ef4043;
+    line-height: calc(20/16); 
+    color: #01263d;
 }
+
 .period{
     font-style: normal;
     font-weight: 400;
@@ -246,8 +243,8 @@ body{
     background-color: #01263d;
     padding: 50px;
     display: flex;
-    flex-direction: row;  
-    gap: 20px;
+    flex-direction: column;  
+    gap: 40px;
     flex-grow: 1
 }  
 @media screen and (min-width: 375px) {  
@@ -257,9 +254,8 @@ body{
 }  
 @media screen and (min-width: 768px) {  
     .sidebar{
-        width: 100%; 
-        flex-direction: column;
-        gap: 30px;
+        width: 100%;
+        
   
     } 
   }
@@ -271,27 +267,26 @@ body{
     } 
 }
 .photo{
-    width: 100px;  
-    height: 100px;
+    width: 200px;  
+    height: 200px;
 }
-@media screen and (min-width: 768px) {
-    .photo{
-        width: 200px;  
-        height: 200px;
-    }
-}
+
 .sidebar-title{
     color:#FFFFFF;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 18px;
     line-height: calc(27/22);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    margin-left: 18px;
+ 
    }
    @media screen and (min-width: 768px) {
     .sidebar-title{
+        font-weight: 700;
         font-size: 22px;
-
+        margin-bottom: 20px;
+      
        }
     }
 .contacts-content-wrap{
@@ -368,4 +363,7 @@ body{
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24/14);
+}
+.accent{
+    color: #20aaad; 
 }
