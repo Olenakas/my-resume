@@ -94,21 +94,28 @@ body{
     font-size: 18px;
     line-height: calc(17/25);
     color: #ef4043;
+    text-align: center;
 }
 .about-name{
     font-style: normal;
     font-weight: 700;
-    font-size: 27px;
+    font-size: 24px;
     line-height: calc(55/45);       
     color: #0e4c6d;
-    margin-top: 13px;
-    margin-bottom: 24px; 
+    margin-top: 9px;
+    margin-bottom: 15px; 
+    text-align: center;
 }
 @media screen and (min-width: 768px) {  
     .about-name{
-        font-size: 45px; 
+        font-size: 28px; 
+        text-align-last: left;
+    }
+    .about-position{
+        text-align-last: left;
     }
   }
+
 .about-destription{
     font-style: normal;
     font-weight: 400;
@@ -135,7 +142,7 @@ body{
     color: #0a0a0a;
 }
 .projects-item:not(:last-child){
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .projects-item-content{
     display: flex;   
@@ -156,7 +163,7 @@ body{
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24/14);
-    color: #595959;
+    color: #72bad5;
     max-width: 300px;
     white-space: nowrap;
     overflow: hidden;
@@ -179,6 +186,12 @@ body{
     line-height: calc(27/22);
     color: #01263d;
     margin-bottom: 14px;
+    text-align: center;
+}
+@media screen and (min-width: 768px) {
+    .title{
+        text-align: left;
+}
 }
 .work-position{
     font-style: normal;
@@ -192,7 +205,7 @@ body{
     font-weight: 700;
     font-size: 16px;
     line-height: calc(20/16); 
-    color: #01263d;
+    color: #aaaaaa;
 }
 
 .period{
@@ -200,7 +213,7 @@ body{
     font-weight: 400;
     font-size: 12px;
     line-height: calc(15/12);
-    color: #A8A8A8;
+    color: #a8a8a8;
 }
 .period:not(:last-child){
     margin-bottom: 7px;
@@ -224,7 +237,7 @@ body{
     color: #595959;    
 }
 .work-list-item::marker{
-    color: #ef4043;
+    /* color: #00CECB; */
 }
 .education-list:not(:last-child){
     margin-bottom: 11px;   
@@ -272,7 +285,7 @@ body{
 }
 
 .sidebar-title{
-    color:#FFFFFF;
+    color:#fff;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -315,7 +328,7 @@ body{
     padding-bottom: 5px;
 }
 .contact-icon{
-    fill: #7b8286;
+    fill: #aaaaaa;
 }
 .contact-icon:hover,
 .contact-icon:focus{
@@ -326,20 +339,20 @@ body{
     font-weight: 400;
     font-size: 11px;
     line-height: calc(24/14);        
-    color: #7b8286;   
+    color: #aaaaaa;   
  }
  .contact-link:hover,
  .contact-link:focus{
     color: #3c8fbb;
  }
  .tech-skills-list{
-    color: #FFFFFF;
+    color: #ffffff;
     padding: 0;
     margin-left: 17px;
     margin-top: 0;
  }
 .tech-skills-item{
-    color: #c43240;
+    
 }
 .tech-skills-text{
     color: #FFFFFF;
@@ -349,21 +362,28 @@ body{
     line-height: calc(24/14);
 }
 .soft-skills-list{
-    color: #FFFFFF;
+    color: #ffffff;
     padding: 0;
     margin-left: 17px;
     margin-top: 0;
 }
 .soft-skills-item {
-    color: #c43240;
+  
 }
 .soft-skills-text {
-    color: #FFFFFF;
+    color: #ffffff;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24/14);
 }
 .accent{
-    color: #20aaad; 
+    color: #00CECB; 
+}
+.contact-icon{
+    display: block;
+}
+.accent-2{
+    color: #ef4043;;
+
 }
